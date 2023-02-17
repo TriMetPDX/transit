@@ -26,7 +26,7 @@
         },
         {
           "layerId": "bikeshare",
-          "url": "http://biketownpdx.socialbicycles.com/opendata/station_information.json",
+          "url": "https://gbfs.biketownpdx.com/gbfs/en/station_information.json",
           "filename": "BIKETOWN-hubs.json",
           "agencyId": "BIKETOWN",
           "agencyName": "BIKETOWN",
@@ -42,7 +42,7 @@
         },
         {
           "layerId": "stops",
-          "url": "http://www.c-tran.com/images/Google/GoogleTransitUpload.zip",
+          "url": "http://mail.c-tran.com/images/Google/GoogleTransitUpload.zip",
           "filename": "C-TRAN-stops.txt",
           "agencyId": "C-TRAN",
           "agencyName": "C-TRAN",
@@ -58,14 +58,6 @@
         },
         {
           "layerId": "stops",
-          "url": "http://cherriots.org/developer/gtfs.zip",
-          "filename": "CHERRIOTS-stops.txt",
-          "agencyId": "CHERRIOTS",
-          "agencyName": "Cherriots",
-          "layerName": "Stop"
-        },
-        {
-          "layerId": "stops",
           "url": "http://oregon-gtfs.com/gtfs_data/sandy-or-us/sandy-or-us.zip",
           "filename": "SAM-stops.txt",
           "agencyId": "SAM",
@@ -74,18 +66,18 @@
         },
         {
           "layerId": "stops",
-          "url": "http://data.trilliumtransit.com/gtfs/wilsonville-or-us/wilsonville-or-us.zip",
-          "filename": "SMART-stops.txt",
-          "agencyId": "SMART",
-          "agencyName": "SMART",
-          "layerName": "Stop"
-        },
-        {
-          "layerId": "stops",
           "url": "http://oregon-gtfs.com/gtfs_data/swanisland-or-us/swanisland-or-us.zip",
           "filename": "SWAN-stops.txt",
           "agencyId": "SWAN",
           "agencyName": "Swan Island",
+          "layerName": "Stop"
+        },
+        {
+          "layerId": "stops",
+          "url": "http://data.trilliumtransit.com/gtfs/wilsonville-or-us/wilsonville-or-us.zip",
+          "filename": "SMART-stops.txt",
+          "agencyId": "SMART",
+          "agencyName": "SMART",
           "layerName": "Stop"
         }
       ]

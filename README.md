@@ -45,8 +45,8 @@ $Env:PELIAS_CONFIG="$(pwd)\pelias.json"
 
 ######INITIAL CHECKOUT
 
-1. git clone https://github.com/OpenTransitTools/pelias.transit.loader.git
-1. cd pelias.transit.loader
+1. git clone https://github.com/pelias/transit.git
+1. cd transit
 1. git update-index --no-assume-unchanged pelias.json
 1. git update-index --assume-unchanged pelias.json
 
@@ -60,4 +60,3 @@ $Env:PELIAS_CONFIG="$(pwd)\pelias.json"
 1. docker images
 1. docker run -i -v $DATA_DIR:/data -t pelias_transit npm run download
 1. ls /data/transit
-1. note ... more Pelias / Transit Docker fun available from [OTT Pelias Dockerfiles](https://github.com/OpenTransitTools/pelias.dockerfiles)
