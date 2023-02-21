@@ -4,6 +4,9 @@
     "timestamp": false
   },
   "imports": {
+    "adminLookup": {
+      "enabled": false
+    },
     "whosonfirst": {
       "datapath": "/data/whosonfirst"
     },

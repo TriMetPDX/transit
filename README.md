@@ -54,5 +54,8 @@ $Env:PELIAS_CONFIG="$(pwd)\pelias.json"
 1. mkdir -p $DATA_DIR/transit
 1. docker build --tag pelias_transit .
 1. docker images
-1. docker run -i -v $DATA_DIR:/data -t pelias_transit npm run download
+1. docker run -i -v $DATA_DIR:/data -t pelias_transit
+1. export PELIAS_CONFIG=$PWD/pelias.json
+1. bin/download
+1. bin/start
 1. ls /data/transit
