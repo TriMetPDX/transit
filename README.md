@@ -48,14 +48,14 @@ $Env:PELIAS_CONFIG="$(pwd)\pelias.json"
 1. git update-index --assume-unchanged pelias.json
 
 #### DOWNLOAD DATA
-1. export DATA_DIR=/data
+1. export DATA_DIR=./data
+1. mkdir -p $DATA_DIR/transit
 1. rm -rf $DATA_DIR/transit/*
 1. docker rmi -f pelias_transit
-1. mkdir -p $DATA_DIR/transit
 1. docker build --tag pelias_transit .
 1. docker images
-1. docker run -i -v $DATA_DIR:/data -t pelias_transit
+1. docker run -i --network="host" -v $DATA_DIR:/data -t pelias_transit
 1. export PELIAS_CONFIG=$PWD/pelias.json
 1. bin/download
-1. bin/start
 1. ls /data/transit
+1. bin/start  # assumes that you have pelias running on http://127.0.0.1:9200
